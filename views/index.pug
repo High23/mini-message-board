@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul 
+    each message in messages
+      li
+        div=message.text
+        span=`by ${message.user} | `
+        span=`Added on ${message.added}`
+      br
+  a(href="/new") 
+    button(type="button", id="add-message")="Add a new message"

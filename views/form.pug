@@ -1,0 +1,12 @@
+header 
+    h1 Message Form
+    form(action="/new", method="post") 
+        label(for="username") Username:
+        input(type="text", name="username", id="username")
+        br
+        br
+        label(for="messageText") Message:
+        textarea(cols="30", rows="10", id="messageText", name="messageText")
+        br
+        br
+        button(type='submit' id="submit") Submit
