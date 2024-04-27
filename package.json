@@ -15,6 +15,7 @@
     "pug": "^3.0.2"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.6",
     "nodemon": "^3.1.0"
   },
   "main": "app.js",
