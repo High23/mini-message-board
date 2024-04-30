@@ -9,7 +9,7 @@ router.get("/", function(req, res, next) {
 router.post("/", function(req, res, next) {
     const messageText = req.body.messageText;
     const username = req.body.username;
-    messages.push({text: messageText, username: username, added: new Date()});
+    messages.push({text: messageText, user: username, added: new Date()});
     res.redirect('/');
 })
 
